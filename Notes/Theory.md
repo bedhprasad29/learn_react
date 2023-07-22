@@ -20,7 +20,8 @@
     - Diff b/w Function and Component (Component will always return UI related stuff, and is PascalCase)
 
 ### Module 3: CSS in React, Ternary Operators, Lists in React
- - 
+ - Make module of CSS file and call and use
+ - How to conditionally rendered in React
 
 
 

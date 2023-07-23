@@ -58,3 +58,82 @@ const Job = (props) => {
 }
 
 export default App;
+// ------------------------------------------------------------------------------
+// After learning conditionals 
+import './App.css'
+// import styles from './App.module.css'
+
+function App() {
+  // Here we tried module wise importing styles
+  // return <div className={styles.App}>
+  //   <h1 className={styles.h1}> Trying CSS </h1>
+  // </div>
+  
+  const age = 16;
+  const isGreen = true;
+  
+  // if (age >= 18) {
+    //   return <div className='App'> OverAge</div>
+    // }
+  // return <div className='App'>
+  //   <h1 className='h1'> Trying CssUnderAge </h1>
+  // </div>
+  return <div className='App'>
+    { age > 18 ? <h1>OverAge</h1> : <h1> Under Age </h1> }
+    {/* <h1 style={isGreen ? {color: 'green'}: {color: 'black'}}> This has Color</h1> */}
+    <h1 style={{ color: isGreen ? 'green' : 'red' }}> This has Color</h1>
+
+    {isGreen && <button> This is a Button</button>}
+  </div>
+}
+
+export default App;
+// ------------------------------------------------------------------------------
+{/* <Lists></Lists> */}
+import './App.css'
+import { Planet } from './Planet';
+import { User } from './User'
+
+function App() {
+  // const names = ['Bishal', 'Bibek', 'Bikram', 'Babu', 'Bedh', "Bhanu"];
+  const users = [
+    { name: 'Bedh', age: 27},
+    { name: 'Bishal', age: 28},
+    { name: 'Atharv', age: 1}
+  ]
+
+  return <div className='App'>
+    {
+      users.map((user, key) => {
+      //  return <h1 key={key}>My name is {name}</h1>
+      // return <div> Name is {user.name} and his age is {user.age} </div>
+      return <User key={key} name={user.name} age={user.age} />
+    })}
+  </div>
+}
+
+export default App;
+
+
+// ------------------------------------------------------------------------------
+// Exercise for <Planets></Planets>
+
+
+// ------------------------------------------------------------------------------
+
+
+// ------------------------------------------------------------------------------
+
+
+// ------------------------------------------------------------------------------
+
+
+// ------------------------------------------------------------------------------
+
+
+// ------------------------------------------------------------------------------
+
+
+// ------------------------------------------------------------------------------
+
+

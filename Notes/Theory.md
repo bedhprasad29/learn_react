@@ -23,6 +23,9 @@
  - Make module of CSS file and call and use
  - How to conditionally rendered in React
 
+ Lists : 
+  - User list Created and Did exercise for Planet for looping list based on ternary operators
+
 
 
 

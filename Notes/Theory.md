@@ -26,6 +26,14 @@
  Lists : 
   - User list Created and Did exercise for Planet for looping list based on ternary operators
 
+## Module 4 : States in React
+ - State is kind of variables that holds data.
+
+ Note : 
+  - Every Input has onChange that triggers when the value changes
+  - onChange has an argument by default i.e., event
+  - To get the use written value we use {event.target.value}
+
 
 
 

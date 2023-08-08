@@ -1,5 +1,5 @@
-export const Planet = (props) => {
+export const Planet = ({name}) => {
     return <ul>
-        <li> <h3> {props.name} </h3></li>
+        <li><p> {name} </p></li>
     </ul>
 }
